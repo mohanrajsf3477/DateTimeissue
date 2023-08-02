@@ -1,0 +1,10 @@
+﻿@page "/"
+@using System.Globalization
+<button @onclick="@parse">click to parse</button>
+@code{
+    private DateTime arabictoday = DateTime.Now;
+    private void parse()
+    {
+        DateTime parsedate = DateTime.Parse(arabictoday.ToString());
+    }
+}
